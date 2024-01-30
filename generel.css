@@ -1,0 +1,160 @@
+body {
+    margin: 5%;
+    background-color: rgba(37, 58, 51, 0.855);
+    color: aliceblue;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 0;
+}
+
+h2 {
+    opacity: 45%;
+    margin-top: -3.5%;
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 8%;
+}
+
+h4 {
+    font-size: 25px;
+    margin: 2%;
+}
+
+img {
+    max-width: 80%;
+}
+
+article img {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+/* klasser */
+
+.kurv {
+    background-color: rgb(59, 59, 59);
+    max-width: 20%;
+    padding: 3%;
+    text-align: center;
+    margin-top: 10%;
+    color: white;
+}
+
+.kurv a {
+    text-decoration: none;
+    color: white;
+}
+
+.kurv :hover {
+    font-weight: bold;
+}
+
+.information_boks {
+    margin-top: 15%;
+    border: solid white 2px;
+    opacity: 70%;
+    max-width: 70%;
+}
+
+.information_boks p {
+    margin: 2%;
+}
+
+.brand {
+    margin: 2%;
+    margin-top: -1%;
+    font-size: 17px;
+}
+
+.pris {
+    margin: 2%;
+}
+
+.mere {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.produkt_udsolgt {
+    position: relative;
+}
+
+.produkt_udsolgt img {
+    opacity: 0.4;
+}
+
+.produkt_udsolgt::before {
+    content: "UDSOLGT";
+    background-color: black;
+    padding: 5%;
+    text-align: center;
+    position: absolute;
+    top: 59%;
+    z-index: 1;
+}
+
+.produkt_rabat {
+    position: relative;
+}
+
+.produkt_rabat::before {
+    content: "-55%";
+    background-color: red;
+    padding: 5%;
+    text-align: center;
+    position: absolute;
+    top: 59%;
+    left: 78.7%;
+}
+
+
+.grid_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
+    gap: 4%;
+}
+
+.grid_kategori {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
+    gap: 4%;
+}
+
+.grid_kategori div {
+    text-align: center;
+    margin-bottom: 10%;
+    /* background-color: rgb(59, 59, 59); */
+    background-image: url(https://kea-alt-del.dk/t7/images/webp/640/1165.webp);
+    background-size: 92%;
+    padding: 7%;
+}
+
+.grid_kategori :hover {
+    transform: scale(1.1);
+}
+
+
+.grid_kategori div h1 {
+    color: rgba(98, 139, 126, 0.855);
+    margin-top: 20%;
+}
