@@ -40,8 +40,17 @@ a {
     color: white;
 }
 
-nav ul li {
+nav ul {
     list-style: none;
+    display: flex;
+    justify-content: right;
+    gap: 5%;
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+
+nav ul :hover {
+    color: rgba(18, 27, 24, 0.855);
 }
 
 /* klasser */
@@ -90,38 +99,25 @@ nav ul li {
     text-decoration: underline;
 }
 
-.produkt_udsolgt {
+.grid a {
     position: relative;
 }
 
-.produkt_udsolgt img {
-    opacity: 0.4;
-}
-
-.produkt_udsolgt::before {
-    content: "UDSOLGT";
+.soldout {
+    position: absolute;
+    top: 59.3%;
+    left: 0;
     background-color: black;
-    padding: 5%;
-    text-align: center;
+    padding: 1rem;
+}
+
+.rabat {
     position: absolute;
-    top: 59%;
-    z-index: 1;
-}
-
-.produkt_rabat {
-    position: relative;
-}
-
-.produkt_rabat::before {
-    content: "-55%";
+    top: 59.3%;
+    left: 78%;
     background-color: red;
-    padding: 5%;
-    text-align: center;
-    position: absolute;
-    top: 59%;
-    left: 78.7%;
+    padding: 1rem;
 }
-
 
 .grid_1_1 {
     display: grid;
