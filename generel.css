@@ -56,7 +56,7 @@ nav ul :hover {
 /* klasser */
 
 .kurv {
-    background-color: rgb(59, 59, 59);
+    background-color: rgba(97, 116, 110, 0.855);
     max-width: 20%;
     padding: 3%;
     text-align: center;
@@ -99,6 +99,10 @@ nav ul :hover {
     text-decoration: underline;
 }
 
+.udsolgt {
+    opacity: 0.5;
+}
+
 .grid a {
     position: relative;
 }
@@ -139,18 +143,19 @@ nav ul :hover {
 .grid_kategori div {
     text-align: center;
     margin-bottom: 10%;
-    /* background-color: rgb(59, 59, 59); */
-    background-image: url(https://kea-alt-del.dk/t7/images/webp/640/1165.webp);
+    background-color: rgba(97, 116, 110, 0.855);
+    /* background-image: url(https://kea-alt-del.dk/t7/images/webp/640/1165.webp); */
     background-size: 92%;
     padding: 7%;
 }
 
 .grid_kategori :hover {
     transform: scale(1.1);
+    color: rgba(37, 58, 51, 0.855);
 }
 
 
 .grid_kategori div h1 {
-    color: rgba(98, 139, 126, 0.855);
+    color: white(98, 139, 126, 0.855);
     margin-top: 20%;
 }
