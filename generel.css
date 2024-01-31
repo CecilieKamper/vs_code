@@ -77,6 +77,16 @@ nav ul :hover {
     background-color: rgba(54, 69, 64, 0.855);
 }
 
+.nav_kurv {
+    max-width: 25%;
+    position: relative;
+    top: -38%;
+}
+
+nav ul li {
+    margin-right: -18%;
+}
+
 .information_boks {
     margin-top: 15%;
     border: solid white 2px;
@@ -129,7 +139,7 @@ nav ul :hover {
 
 .logo {
     position: relative;
-    left: -55%;
+    left: -65%;
     font-size: 30px;
 }
 
