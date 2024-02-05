@@ -20,22 +20,25 @@
     </header>
     <main>
       <section class="grid">
-        <a href="produkt.html">
-          <article>
-            <img
-              class="udsolgt"
-              src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp"
-              alt=""
-            />
-            <h4>Blue T20 Indian Cricket Jersey</h4>
-            <p class="brand">Nike</p>
-            <p class="pris">DKK 1595,-</p>
-            <p class="mere">SE MERE</p>
-            <p class="soldout">UDSOLGT</p>
-          </article>
-        </a>
-        <a href="produkt.html">
-          <article>
+        <template id="smallProductTemplate">
+          <a class="klikVidere" href="produkt.html">
+            <article class="smallProduct soldOut">
+              <img
+                class="udsolgt"
+                src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp"
+                alt=""
+              />
+              <h4>Blue T20 Indian Cricket Jersey</h4>
+              <p class="brand">Nike</p>
+              <p class="pris">DKK <span></span>,-</p>
+              <p class="mere">SE MERE</p>
+              <p class="soldout">UDSOLGT</p>
+              <p class="rabat">-55%</p>
+            </article>
+          </a>
+        </template>
+        <!-- <a href="produkt.html">
+          <article class="smallProduct onSale">
             <img
               src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp"
               alt=""
@@ -48,7 +51,7 @@
           </article>
         </a>
         <a href="produkt.html">
-          <article>
+          <article class="smallProduct onSale">
             <img
               src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp"
               alt=""
@@ -61,7 +64,7 @@
           </article>
         </a>
         <a href="produkt.html">
-          <article>
+          <article class="smallProduct">
             <img
               src="https://kea-alt-del.dk/t7/images/webp/640/1529.webp"
               alt=""
@@ -73,7 +76,7 @@
           </article>
         </a>
         <a href="produkt.html">
-          <article>
+          <article class="smallProduct">
             <img
               src="https://kea-alt-del.dk/t7/images/webp/640/1526.webp"
               alt=""
@@ -85,7 +88,7 @@
           </article>
         </a>
         <a href="produkt.html">
-          <article>
+          <article class="smallProduct onSale soldOut">
             <img
               class="udsolgt"
               src="https://kea-alt-del.dk/t7/images/webp/640/1530.webp"
@@ -98,8 +101,9 @@
             <p class="soldout">UDSOLGT</p>
             <p class="rabat">-55%</p>
           </article>
-        </a>
+        </a> -->
       </section>
     </main>
+    <script src="produktliste.js"></script>
   </body>
 </html>
