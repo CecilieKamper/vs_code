@@ -5,7 +5,7 @@ body {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 45px;
     margin-top: 0;
 }
 
@@ -113,9 +113,6 @@ nav ul li {
     text-decoration: underline;
 }
 
-.udsolgt {
-    opacity: 0.5;
-}
 
 .grid a {
     position: relative;
@@ -132,7 +129,7 @@ nav ul li {
 .rabat {
     position: absolute;
     top: 59.3%;
-    left: 78%;
+    left: 81.2%;
     background-color: red;
     padding: 1rem;
 }
@@ -145,18 +142,18 @@ nav ul li {
 
 .grid_1_1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 4%;
 }
 
 .grid_kategori {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 4%;
 }
 

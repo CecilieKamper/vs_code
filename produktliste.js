@@ -1,4 +1,7 @@
-fetch ("https://kea-alt-del.dk/t7/api/products")
+const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get("category");
+
+fetch ("https://kea-alt-del.dk/t7/api/products?category="+category)
 .then((res)=>res.json())
 .then(showProducts);
 
@@ -26,16 +29,21 @@ copy.querySelector("h4").textContent=product.productdisplayname
 copy.querySelector(".brand").textContent=product.brandname
 copy.querySelector(".pris span").textContent=product.price
 copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
+copy.querySelector(".rabat span").textContent=product.discount
 
 
 if(product.soldout){
     //Produkt er udsolgt
-    copy.querySelector("article").classList.add("soldOut");
+}
+else{
+    copy.querySelector(".soldout").remove();
 }
 
-if(product.rabat){
+if(product.discount){
     //Produkt er på tilbud
-    copy.querySelector("article").classList.add("onSale");
+}
+else{
+    copy.querySelector(".rabat").remove();
 }
 
 copy.querySelector(".klikVidere").setAttribute("href", `produkt.html?id=${product.id}`)
