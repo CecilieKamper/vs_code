@@ -40,12 +40,10 @@ a {
     color: white;
 }
 
-
-
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     gap: 5%;
     font-size: 20px;
     margin-bottom: 5%;
@@ -132,12 +130,6 @@ nav ul li {
     left: 81.2%;
     background-color: red;
     padding: 1rem;
-}
-
-.logo {
-    position: relative;
-    left: -65%;
-    font-size: 30px;
 }
 
 .grid_1_1 {
